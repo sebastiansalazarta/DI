@@ -9,4 +9,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('bases');
+
+  counter: number = 10;
+  // Create your method here
+  handleButtonAdd() {
+    this.counter++
+  }
+
+  handleButtonSub() {
+    this.counter--
+  }
 }
+
+
